@@ -61,7 +61,7 @@ export const Home = () => {
         };
     }, [loading, hasMore]);
     return (
-        <div className="bg-black">
+        <div>
             <section
                 className="bg-[url('https://masmejores.com/wp-content/uploads/cafeteria-acogedora-y-atractiva.jpg')]
                h-screen bg-cover bg-center bg-no-repeat"

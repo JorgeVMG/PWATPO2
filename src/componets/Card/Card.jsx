@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export const Card = ({ product }) => {
+    const navigate = useNavigate();
     return (
         <div
             key={product.id}
@@ -6,6 +9,7 @@ export const Card = ({ product }) => {
              overflow-hidden cursor-pointer
              transform transition-transform duration-300 ease-in-out
              hover:scale-105 hover:shadow-xl m-2 pt-2 pr-2"
+            onClick={() => navigate(`/detail/${product.id}`)}
         >
             <div className="flex">
                 <div className="flex-1 p-3 bg-gray-50">
